@@ -5,7 +5,10 @@
         "departure": "8:30 AM",
         "status": "ONTIME",
         "expectedDelayInMinutes": 0,
-        "reasonForDelay": ""
+        "reasonForDelay": "",
+        "departureAirportCode": "LHR",
+        "arrivalAirportCode": "CDG",
+        "flightID": "LHR-CDG"
     },
     {
         "id": "lhr-mbj-1",
@@ -13,7 +16,10 @@
         "departure": "10:00 AM",
         "status": "DELAYED",
         "expectedDelayInMinutes": 20,
-        "reasonForDelay": "Weather conditions"
+        "reasonForDelay": "Weather conditions",
+        "departureAirportCode": "LHR",
+        "arrivalAirportCode": "MBJ",
+        "flightID": "LHR-MBJ"
     },
     {
         "id": "lhr-nrt-1",
@@ -21,7 +27,10 @@
         "departure": "11:30 AM",
         "status": "CANCELLED",
         "expectedDelayInMinutes": 0,
-        "reasonForDelay": "Technical issues"
+        "reasonForDelay": "Technical issues",
+        "departureAirportCode": "LHR",
+        "arrivalAirportCode": "NRT",
+        "flightID": "LHR-NRT"
     },
     {
         "id": "lhr-ams-1",
@@ -29,7 +38,10 @@
         "departure": "9:00 AM",
         "status": "ONTIME",
         "expectedDelayInMinutes": 0,
-        "reasonForDelay": ""
+        "reasonForDelay": "",
+        "departureAirportCode": "LHR",
+        "arrivalAirportCode": "AMS",
+        "flightID": "LHR-AMS"
     },
     {
         "id": "lhr-doha-1",
@@ -37,6 +49,9 @@
         "departure": "2:00 AM",
         "status": "DELAYED",
         "expectedDelayInMinutes": 15,
-        "reasonForDelay": "Air traffic control"
+        "reasonForDelay": "Air traffic control",
+        "departureAirportCode": "LHR",
+        "arrivalAirportCode": "DOH",
+        "flightID": "LHR-DOH"
     }
 ]
