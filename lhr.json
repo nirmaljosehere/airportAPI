@@ -1,0 +1,42 @@
+[
+    {
+        "id": "lhr-cdg-1",
+        "name": "London (LHR) to Paris (CDG)",
+        "departure": "8:30 AM",
+        "status": "ONTIME",
+        "expectedDelayInMinutes": 0,
+        "reasonForDelay": ""
+    },
+    {
+        "id": "lhr-mbj-1",
+        "name": "London (LHR) to Montego Bay, Jamaica (MBJ)",
+        "departure": "10:00 AM",
+        "status": "DELAYED",
+        "expectedDelayInMinutes": 20,
+        "reasonForDelay": "Weather conditions"
+    },
+    {
+        "id": "lhr-nrt-1",
+        "name": "London (LHR) to Tokyo (NRT)",
+        "departure": "11:30 AM",
+        "status": "CANCELLED",
+        "expectedDelayInMinutes": 0,
+        "reasonForDelay": "Technical issues"
+    },
+    {
+        "id": "lhr-ams-1",
+        "name": "London (LHR) to Amsterdam (AMS)",
+        "departure": "9:00 AM",
+        "status": "ONTIME",
+        "expectedDelayInMinutes": 0,
+        "reasonForDelay": ""
+    },
+    {
+        "id": "lhr-doha-1",
+        "name": "London (LHR) to Doha (DOH)",
+        "departure": "2:00 AM",
+        "status": "DELAYED",
+        "expectedDelayInMinutes": 15,
+        "reasonForDelay": "Air traffic control"
+    }
+]
