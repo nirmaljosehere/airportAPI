@@ -1,9 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mockaroo API Wrapper</title>
+  <script>
+    // Dynamic JSON API simulation
+    async function serveJSON() {
+      // Set the correct content type for JSON response
+      document.head.innerHTML = '<meta http-equiv="Content-Type" content="application/json; charset=UTF-8">';
+      
+      // Extract the `flightID` from the URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const flightID = urlParams.get('flightID');
+      
+      if (!flightID) {
+        // Return an error as JSON if `flightID` is missing
+        document.body.innerText = JSON.stringify({ error: "flightID parameter is required" });
+        return;
+      }
+
+      try {
+        // Fetch the response from Mockaroo API
+        const apiUrl = `https://my.api.mockaroo.com/qatar_airways_api.json?key=1b870620&flightID=${flightID}`;
+        const response = await fetch(apiUrl, { method: 'GET' });
+        
+        if (!response.ok) {
+          throw new Error("Failed to fetch data from Mockaroo API");
+        }
+
+        // Parse the API response as JSON
+        const data = await response.json();
+
+        // Serve the data as a raw JSON string
+        document.body.innerText = JSON.stringify(data, null, 2);
+      } catch (error) {
+        // Serve the error as JSON
+        document.body.innerText = JSON.stringify({ error: error.message });
+      }
+    }
+
+    // Run the function when the page loads
+    serveJSON();
+  </script>
 </head>
 <body>
-  <script src="index.js"></script>
 </body>
 </html>
